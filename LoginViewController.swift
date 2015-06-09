@@ -57,6 +57,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
 
+
+    
     func signUpOrLogin() {
 
         activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
