@@ -15,9 +15,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var LoginButton: UIButton!
-    @IBOutlet weak var registeredText: UILabel!
-    @IBOutlet weak var signUpButton: UIButton!
+
 
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     func displayAlert(title: String, message: String) {

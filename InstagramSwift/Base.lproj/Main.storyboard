@@ -72,7 +72,7 @@
                                     <rect key="frame" x="181" y="318" width="38" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="logIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7P1-zm-M5t"/>
+                                    <action selector="LogIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WXo-oJ-Wee"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edo-qI-mDm">
@@ -87,10 +87,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="loginButton" destination="xQu-pN-5I8" id="Z56-Zq-rpH"/>
                         <outlet property="password" destination="edo-qI-mDm" id="HYx-kL-IQK"/>
-                        <outlet property="registeredText" destination="5CX-ob-SFd" id="Vso-w1-j27"/>
-                        <outlet property="signupButton" destination="2Se-na-hIb" id="UZa-Ab-Wtg"/>
                         <outlet property="username" destination="ARC-BR-Mag" id="02G-fA-33Z"/>
                     </connections>
                 </viewController>
