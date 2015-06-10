@@ -18,6 +18,10 @@ class Cell: UITableViewCell {
 
     @IBOutlet weak var comment: UILabel!
 
+//    override func layoutSubviews() {
+//        imageView?.frame = CGRectInset(self.bounds, 20, 70)
+//        imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+//    }
 
 
 }

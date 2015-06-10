@@ -114,7 +114,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
             if let downloadedImage = UIImage(data: data!) {
 
+
                 myCell.postedImage.image = downloadedImage
+//                myCell.postedImage.frame = CGRectInset(myCell.bounds, 30, 30)
+//                myCell.postedImage.contentMode = UIViewContentMode.ScaleAspectFit
+
 
             }
 
