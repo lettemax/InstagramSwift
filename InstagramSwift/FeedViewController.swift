@@ -130,6 +130,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     }
 
+    override func viewDidAppear(animated: Bool) {
+        tableView.reloadData()
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

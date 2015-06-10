@@ -11,7 +11,7 @@ import Parse
 
 class LoginViewController: UIViewController {
 
-    var signupActive = true
+    //var signupActive = true
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -30,25 +30,14 @@ class LoginViewController: UIViewController {
         if username.text == "" || password.text == "" {
             displayAlert("Error in form", message: "Please enter a username and password")
         } else {
-            signUpOrLogin()
+            login()
         }
     }
 
 
     @IBAction func signUp(sender: AnyObject) {
 
-        if signupActive == true {
-
-            signUpOrLogin()
-
-            signupActive = false
-
-        } else {
-
-            signUpOrLogin()
-
-            signupActive = true
-        }
+       signUpFunc()
     }
 
     override func viewDidLoad() {
@@ -56,7 +45,7 @@ class LoginViewController: UIViewController {
     }
 
     
-    func signUpOrLogin() {
+    func login() {
 
         activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
         activityIndicator.center = self.view.center
@@ -68,33 +57,12 @@ class LoginViewController: UIViewController {
 
         var errorMessage = "Please try again later"
 
-        if signupActive == true {
-
-            var user = PFUser()
-            user.username = username.text
-            user.password = password.text
-
-            user.signUpInBackgroundWithBlock({ (success, error) -> Void in
-
-                self.activityIndicator.stopAnimating()
-                UIApplication.sharedApplication().endIgnoringInteractionEvents()
-
-                if error == nil {
-                    println("successful signup/login")
-                    self.performSegueWithIdentifier("ToMainApp", sender: self)
-                } else {
-                    if let errorString = error!.userInfo?["error"] as? String {
-                        errorMessage = errorString
-                    }
-                    self.displayAlert("Failed SignUp", message: errorMessage)
-                }
-            })
-        } else {
             PFUser.logInWithUsernameInBackground(username.text, password: password.text, block: { (user, error) -> Void in
                 self.activityIndicator.stopAnimating()
                 UIApplication.sharedApplication().endIgnoringInteractionEvents()
                 if user != nil {
                     println("user logged in")
+                    self.performSegueWithIdentifier("ToMainApp", sender: self)
                 } else {
                     if let errorString = error!.userInfo?["error"] as? String {
                         errorMessage = errorString
@@ -102,7 +70,39 @@ class LoginViewController: UIViewController {
                     self.displayAlert("Failed Login", message: errorMessage)
                 }
             })
-        }
+
+    }
+    
+    func signUpFunc(){
+        activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+
+        var errorMessage = "Please try again later"
+
+        var user = PFUser()
+        user.username = username.text
+        user.password = password.text
+
+        user.signUpInBackgroundWithBlock({ (success, error) -> Void in
+
+            self.activityIndicator.stopAnimating()
+            UIApplication.sharedApplication().endIgnoringInteractionEvents()
+
+            if error == nil {
+                println("successful signup/login")
+                self.performSegueWithIdentifier("ToMainApp", sender: self)
+            } else {
+                if let errorString = error!.userInfo?["error"] as? String {
+                    errorMessage = errorString
+                }
+                self.displayAlert("Failed SignUp", message: errorMessage)
+            }
+        })
     }
 }
 
