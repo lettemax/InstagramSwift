@@ -17,7 +17,7 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
             var alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction((UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
 
-                self.dismissViewControllerAnimated(true, completion: nil)
+                //self.dismissViewControllerAnimated(true, completion: nil)
 
             })))
 
@@ -29,8 +29,8 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
 
         var activityIndicator = UIActivityIndicatorView()
 
-        @IBOutlet weak var imageToPost: UIImageView!
 
+        @IBOutlet weak var imageToPost: UIImageView!
 
         @IBAction func pickImage(sender: AnyObject) {
 

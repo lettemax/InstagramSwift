@@ -11,10 +11,13 @@ import UIKit
 
 class cell: UITableViewCell {
 
-    @IBOutlet var postedImage: UIImageView!
 
-    @IBOutlet var username: UILabel!
+    @IBOutlet weak var postedImage: UIImageView!
 
-    @IBOutlet var message: UILabel!
+    @IBOutlet weak var username: UILabel!
+
+    @IBOutlet weak var comment: UILabel!
+
+
 
 }
