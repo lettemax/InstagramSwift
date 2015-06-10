@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3CB0E21B28D4F100AE855E /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CB0E11B28D4F100AE855E /* FeedTableViewController.swift */; };
 		CEAF4D491B2785FB0045B42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D481B2785FB0045B42E /* AppDelegate.swift */; };
 		CEAF4D4B1B2785FB0045B42E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D4A1B2785FB0045B42E /* LoginViewController.swift */; };
 		CEAF4D4E1B2785FB0045B42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAF4D4C1B2785FB0045B42E /* Main.storyboard */; };
@@ -32,10 +33,10 @@
 		CEAF4D8B1B2786FA0045B42E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAF4D8A1B2786FA0045B42E /* libsqlite3.dylib */; };
 		CEAF4D8D1B27870C0045B42E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAF4D8C1B27870C0045B42E /* Accounts.framework */; };
 		CEAF4D8F1B2787120045B42E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAF4D8E1B2787120045B42E /* Social.framework */; };
-		CEB72F4C1B27B20C0042EC54 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F4B1B27B20C0042EC54 /* FeedViewController.swift */; };
 		CEB72F4E1B27B6FB0042EC54 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F4D1B27B6FA0042EC54 /* UsersViewController.swift */; };
 		CEB72F501B27B7140042EC54 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F4F1B27B7140042EC54 /* ProfileViewController.swift */; };
 		CEB72F521B27B72C0042EC54 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F511B27B72C0042EC54 /* UploadViewController.swift */; };
+		CEEBC32D1B28D66400070D9B /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBC32C1B28D66400070D9B /* cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE3CB0E11B28D4F100AE855E /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableViewController.swift; path = ../FeedTableViewController.swift; sourceTree = "<group>"; };
 		CEAF4D431B2785FB0045B42E /* InstagramSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAF4D471B2785FB0045B42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAF4D481B2785FB0045B42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,10 +80,10 @@
 		CEAF4D8A1B2786FA0045B42E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CEAF4D8C1B27870C0045B42E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CEAF4D8E1B2787120045B42E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		CEB72F4B1B27B20C0042EC54 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CEB72F4D1B27B6FA0042EC54 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		CEB72F4F1B27B7140042EC54 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CEB72F511B27B72C0042EC54 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		CEEBC32C1B28D66400070D9B /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +148,10 @@
 				CEAF4D481B2785FB0045B42E /* AppDelegate.swift */,
 				CEAF4D4A1B2785FB0045B42E /* LoginViewController.swift */,
 				CEB72F4D1B27B6FA0042EC54 /* UsersViewController.swift */,
-				CEB72F4B1B27B20C0042EC54 /* FeedViewController.swift */,
 				CEB72F4F1B27B7140042EC54 /* ProfileViewController.swift */,
+				CE3CB0E11B28D4F100AE855E /* FeedTableViewController.swift */,
 				CEB72F511B27B72C0042EC54 /* UploadViewController.swift */,
+				CEEBC32C1B28D66400070D9B /* cell.swift */,
 				CEAF4D4C1B2785FB0045B42E /* Main.storyboard */,
 				CEAF4D4F1B2785FB0045B42E /* Images.xcassets */,
 				CEAF4D511B2785FB0045B42E /* LaunchScreen.xib */,
@@ -318,10 +321,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAF4D4B1B2785FB0045B42E /* LoginViewController.swift in Sources */,
+				CE3CB0E21B28D4F100AE855E /* FeedTableViewController.swift in Sources */,
 				CEB72F521B27B72C0042EC54 /* UploadViewController.swift in Sources */,
 				CEB72F4E1B27B6FB0042EC54 /* UsersViewController.swift in Sources */,
 				CEB72F501B27B7140042EC54 /* ProfileViewController.swift in Sources */,
-				CEB72F4C1B27B20C0042EC54 /* FeedViewController.swift in Sources */,
+				CEEBC32D1B28D66400070D9B /* cell.swift in Sources */,
 				CEAF4D491B2785FB0045B42E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

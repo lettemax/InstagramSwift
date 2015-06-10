@@ -27,7 +27,6 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
         }
 
 
-
         var activityIndicator = UIActivityIndicatorView()
 
         @IBOutlet weak var imageToPost: UIImageView!
@@ -49,15 +48,11 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
 
             imageToPost.image = image
 
-
-
         }
 
 
         @IBOutlet weak var comment: UITextField!
-//
-//
-//        @IBAction func postImage(sender: AnyObject) {
+
         @IBAction func postImage(sender: AnyObject) {
 
             activityIndicator = UIActivityIndicatorView(frame: self.view.frame)
@@ -105,33 +100,33 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
             }
 
         }
+}
 
-
-        override func viewDidLoad() {
-            super.viewDidLoad()
-
-            // Do any additional setup after loading the view.
-        }
-
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-        }
-        
-        
-        /*
-        // MARK: - Navigation
-        
-        // In a storyboard-based application, you will often want to do a little preparation before navigation
-        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        }
-        */
-        
-    }
-
-
-
-
-
+//        override func viewDidLoad() {
+//            super.viewDidLoad()
+//
+//            // Do any additional setup after loading the view.
+//        }
+//
+//        override func didReceiveMemoryWarning() {
+//            super.didReceiveMemoryWarning()
+//            // Dispose of any resources that can be recreated.
+//        }
+//        
+//        
+//        /*
+//        // MARK: - Navigation
+//        
+//        // In a storyboard-based application, you will often want to do a little preparation before navigation
+//        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        // Get the new view controller using segue.destinationViewController.
+//        // Pass the selected object to the new view controller.
+//        }
+//        */
+//        
+//    }
+//
+//
+//
+//
+//
