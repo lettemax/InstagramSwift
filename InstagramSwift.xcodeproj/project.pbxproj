@@ -32,6 +32,10 @@
 		CEAF4D8B1B2786FA0045B42E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAF4D8A1B2786FA0045B42E /* libsqlite3.dylib */; };
 		CEAF4D8D1B27870C0045B42E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAF4D8C1B27870C0045B42E /* Accounts.framework */; };
 		CEAF4D8F1B2787120045B42E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAF4D8E1B2787120045B42E /* Social.framework */; };
+		CEB72F4C1B27B20C0042EC54 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F4B1B27B20C0042EC54 /* FeedViewController.swift */; };
+		CEB72F4E1B27B6FB0042EC54 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F4D1B27B6FA0042EC54 /* UsersViewController.swift */; };
+		CEB72F501B27B7140042EC54 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F4F1B27B7140042EC54 /* ProfileViewController.swift */; };
+		CEB72F521B27B72C0042EC54 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F511B27B72C0042EC54 /* UploadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,10 @@
 		CEAF4D8A1B2786FA0045B42E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CEAF4D8C1B27870C0045B42E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CEAF4D8E1B2787120045B42E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CEB72F4B1B27B20C0042EC54 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		CEB72F4D1B27B6FA0042EC54 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		CEB72F4F1B27B7140042EC54 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CEB72F511B27B72C0042EC54 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,10 @@
 			children = (
 				CEAF4D481B2785FB0045B42E /* AppDelegate.swift */,
 				CEAF4D4A1B2785FB0045B42E /* LoginViewController.swift */,
+				CEB72F4D1B27B6FA0042EC54 /* UsersViewController.swift */,
+				CEB72F4B1B27B20C0042EC54 /* FeedViewController.swift */,
+				CEB72F4F1B27B7140042EC54 /* ProfileViewController.swift */,
+				CEB72F511B27B72C0042EC54 /* UploadViewController.swift */,
 				CEAF4D4C1B2785FB0045B42E /* Main.storyboard */,
 				CEAF4D4F1B2785FB0045B42E /* Images.xcassets */,
 				CEAF4D511B2785FB0045B42E /* LaunchScreen.xib */,
@@ -306,6 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAF4D4B1B2785FB0045B42E /* LoginViewController.swift in Sources */,
+				CEB72F521B27B72C0042EC54 /* UploadViewController.swift in Sources */,
+				CEB72F4E1B27B6FB0042EC54 /* UsersViewController.swift in Sources */,
+				CEB72F501B27B7140042EC54 /* ProfileViewController.swift in Sources */,
+				CEB72F4C1B27B20C0042EC54 /* FeedViewController.swift in Sources */,
 				CEAF4D491B2785FB0045B42E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +522,7 @@
 				CEAF4D641B2785FB0045B42E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEAF4D651B2785FB0045B42E /* Build configuration list for PBXNativeTarget "InstagramSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +531,7 @@
 				CEAF4D671B2785FB0045B42E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

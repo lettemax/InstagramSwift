@@ -55,7 +55,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
 
-
     
     func signUpOrLogin() {
 
@@ -82,6 +81,7 @@ class LoginViewController: UIViewController {
 
                 if error == nil {
                     println("successful signup/login")
+                    self.performSegueWithIdentifier("ToMainApp", sender: self)
                 } else {
                     if let errorString = error!.userInfo?["error"] as? String {
                         errorMessage = errorString
