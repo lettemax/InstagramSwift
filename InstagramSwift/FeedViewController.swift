@@ -108,18 +108,17 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let myCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as cell
+        let myCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as Cell
 
         imageFiles[indexPath.row].getDataInBackgroundWithBlock { (data, error) -> Void in
 
             if let downloadedImage = UIImage(data: data!) {
 
-                myCell.postedImage.image! = downloadedImage
+                myCell.postedImage.image = downloadedImage
 
             }
 
         }
-
 
 
         myCell.username.text = usernames[indexPath.row]

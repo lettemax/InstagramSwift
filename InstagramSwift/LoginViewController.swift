@@ -72,7 +72,7 @@ class LoginViewController: UIViewController {
             })
 
     }
-    
+
     func signUpFunc(){
         activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
         activityIndicator.center = self.view.center

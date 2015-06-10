@@ -36,7 +36,7 @@
 		CEB72F501B27B7140042EC54 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F4F1B27B7140042EC54 /* ProfileViewController.swift */; };
 		CEB72F521B27B72C0042EC54 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB72F511B27B72C0042EC54 /* UploadViewController.swift */; };
 		CEEBC32F1B28DA1600070D9B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBC32E1B28DA1600070D9B /* FeedViewController.swift */; };
-		CEEBC3311B28E0D200070D9B /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBC3301B28E0D200070D9B /* cell.swift */; };
+		CEEBC3311B28E0D200070D9B /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBC3301B28E0D200070D9B /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,7 @@
 		CEB72F4F1B27B7140042EC54 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CEB72F511B27B72C0042EC54 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		CEEBC32E1B28DA1600070D9B /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		CEEBC3301B28E0D200070D9B /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		CEEBC3301B28E0D200070D9B /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 				CEB72F4F1B27B7140042EC54 /* ProfileViewController.swift */,
 				CEEBC32E1B28DA1600070D9B /* FeedViewController.swift */,
 				CEB72F511B27B72C0042EC54 /* UploadViewController.swift */,
-				CEEBC3301B28E0D200070D9B /* cell.swift */,
+				CEEBC3301B28E0D200070D9B /* Cell.swift */,
 				CEAF4D4C1B2785FB0045B42E /* Main.storyboard */,
 				CEAF4D4F1B2785FB0045B42E /* Images.xcassets */,
 				CEAF4D511B2785FB0045B42E /* LaunchScreen.xib */,
@@ -325,7 +325,7 @@
 				CEB72F4E1B27B6FB0042EC54 /* UsersViewController.swift in Sources */,
 				CEB72F501B27B7140042EC54 /* ProfileViewController.swift in Sources */,
 				CEAF4D491B2785FB0045B42E /* AppDelegate.swift in Sources */,
-				CEEBC3311B28E0D200070D9B /* cell.swift in Sources */,
+				CEEBC3311B28E0D200070D9B /* Cell.swift in Sources */,
 				CEEBC32F1B28DA1600070D9B /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
