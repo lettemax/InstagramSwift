@@ -57,6 +57,7 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
 
         imageTaker.delegate = self
         imageTaker.sourceType = UIImagePickerControllerSourceType.Camera
+        imageTaker.showsCameraControls = true
         //    imagePicker.mediaTypes = [kUTTypeImage as NSString]
         imageTaker.allowsEditing = false
 
