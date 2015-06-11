@@ -6,22 +6,18 @@
 //  Copyright (c) 2015 Max. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import ParseUI
 
 class Cell: UITableViewCell {
+    @IBOutlet weak var postedImage: PFImageView!
 
+//    @IBOutlet weak var username: UILabel!
+//
+//    @IBOutlet weak var comment: UILabel!
 
-    @IBOutlet weak var postedImage: UIImageView!
-
-    @IBOutlet weak var username: UILabel!
-
-    @IBOutlet weak var comment: UILabel!
-
-//    override func layoutSubviews() {
-//        imageView?.frame = CGRectInset(self.bounds, 20, 70)
-//        imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-//    }
-
-
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        postedImage.frame = contentView.bounds
+    }
 }
