@@ -23,7 +23,6 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
 
             self.presentViewController(alert, animated: true, completion: nil)
 
-
         }
 
 
@@ -50,6 +49,30 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
 
         }
 
+    //tried to use camera, doesn't work yet
+
+    @IBAction func takePhoto(sender: AnyObject) {
+
+        let imageTaker = UIImagePickerController()
+
+        imageTaker.delegate = self
+        imageTaker.sourceType = UIImagePickerControllerSourceType.Camera
+        //    imagePicker.mediaTypes = [kUTTypeImage as NSString]
+        imageTaker.allowsEditing = false
+
+        self.presentViewController(imageTaker, animated: true,
+            completion: nil)
+    }
+
+    func imagePickerControllerCamera(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+
+        self.dismissViewControllerAnimated(true, completion:nil)
+
+        imageToPost.image = image
+        
+    }
+
+    
 
         @IBOutlet weak var comment: UITextField!
 
@@ -75,7 +98,13 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
 
             let imageFile = PFFile(name: "image.png", data: imageData)
 
+//            var currentUser = PFUser.currentUser()
+//
+//            currentUser["imageFile"] = imageFile
+
             post["imageFile"] = imageFile
+
+//            currentUser.save()
 
             post.saveInBackgroundWithBlock{(success, error) -> Void in
 
@@ -94,11 +123,8 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
                 } else {
 
                     self.displayAlert("Could not post image", message: "Please try again later")
-
                 }
-
             }
-
         }
 }
 

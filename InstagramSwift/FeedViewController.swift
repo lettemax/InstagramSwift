@@ -36,15 +36,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.usernames.removeAll(keepCapacity: true)
 
                 for object in users {
-
                     if let user = object as? PFUser {
-
                         self.users[user.objectId!] = user.username!
-
                     }
                 }
             }
-
 
             var getFollowedUsersQuery = PFQuery(className: "followers")
 
@@ -78,13 +74,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                             }
                         })
                     }
-
                 }
-
             }
-
         })
-
     }
 
     // MARK: - Table view data source
