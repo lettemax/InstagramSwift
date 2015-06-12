@@ -12,6 +12,20 @@ import UIKit
 
 class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+//trying to change the font size of the tab bar items
+
+    override func awakeFromNib() {
+        let appearance = UITabBarItem.appearance()
+        let attributes = [NSFontAttributeName:UIFont(name: "American Typewriter", size: 20)!]
+        appearance.setTitleTextAttributes(attributes, forState: UIControlState.Normal)
+//        appearance.setTitleTextAttributes(attributes, forState: UIControlState.Normal)
+
+
+        //let font = UIFont(name: "AvenirNext-Regular", size: 16.0)
+        //let attributes: [NSObject : AnyObject]? = [ NSFontAttributeName : font! ]
+        //self.segmentedControl.setTitleTextAttributes(attributes, forState: UIControlState.Normal)
+    }
+
 
     var imageFiles : [PFObject] = []
     //or var imageFiled = [] as [PFObject]
@@ -30,7 +44,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
 
             if let objects = objects {
 
-                self.imageFiles = objects as [PFObject]
+                self.imageFiles = objects as! [PFObject]
 //                for imageFile in objects {
 //
 //                    self.imageFiles.append(imageFile["imageFile"] as PFFile)
@@ -45,7 +59,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        queryForGetUserPhotos()
+                queryForGetUserPhotos()
+
 
 //        self.imageFiles.append(currentUser["imageFile"] as PFFile)
 //
@@ -60,7 +75,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let myCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as Cell
+        let myCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! Cell
         let photoFile = imageFiles[indexPath.row]
         myCell.postedImage.file = photoFile["imageFile"] as? PFFile
         //why error: Execution was interrupted, reason: EXC_BAD_INSTRUCTION (code=EXC_I386_INVOP, subcode=0x0). The process has been returned to the state before expression evaluation.
