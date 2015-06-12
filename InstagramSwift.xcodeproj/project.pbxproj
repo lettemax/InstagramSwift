@@ -10,7 +10,6 @@
 		CEAF4D491B2785FB0045B42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D481B2785FB0045B42E /* AppDelegate.swift */; };
 		CEAF4D4B1B2785FB0045B42E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D4A1B2785FB0045B42E /* LoginViewController.swift */; };
 		CEAF4D4E1B2785FB0045B42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAF4D4C1B2785FB0045B42E /* Main.storyboard */; };
-		CEAF4D501B2785FB0045B42E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAF4D4F1B2785FB0045B42E /* Images.xcassets */; };
 		CEAF4D531B2785FB0045B42E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAF4D511B2785FB0045B42E /* LaunchScreen.xib */; };
 		CEAF4D5F1B2785FB0045B42E /* InstagramSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D5E1B2785FB0045B42E /* InstagramSwiftTests.swift */; };
 		CEAF4D701B27865D0045B42E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAF4D6A1B27865D0045B42E /* Bolts.framework */; };
@@ -55,7 +54,6 @@
 		CEAF4D481B2785FB0045B42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAF4D4A1B2785FB0045B42E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEAF4D4D1B2785FB0045B42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CEAF4D4F1B2785FB0045B42E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEAF4D521B2785FB0045B42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CEAF4D581B2785FB0045B42E /* InstagramSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAF4D5D1B2785FB0045B42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 				CEB72F511B27B72C0042EC54 /* UploadViewController.swift */,
 				CEEBC3301B28E0D200070D9B /* Cell.swift */,
 				CEAF4D4C1B2785FB0045B42E /* Main.storyboard */,
-				CEAF4D4F1B2785FB0045B42E /* Images.xcassets */,
 				CEAF4D511B2785FB0045B42E /* LaunchScreen.xib */,
 				CEAF4D461B2785FB0045B42E /* Supporting Files */,
 			);
@@ -302,7 +299,6 @@
 			files = (
 				CEAF4D4E1B2785FB0045B42E /* Main.storyboard in Resources */,
 				CEAF4D531B2785FB0045B42E /* LaunchScreen.xib in Resources */,
-				CEAF4D501B2785FB0045B42E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

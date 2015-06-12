@@ -18,12 +18,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         let appearance = UITabBarItem.appearance()
         let attributes = [NSFontAttributeName:UIFont(name: "American Typewriter", size: 20)!]
         appearance.setTitleTextAttributes(attributes, forState: UIControlState.Normal)
-//        appearance.setTitleTextAttributes(attributes, forState: UIControlState.Normal)
 
-
-        //let font = UIFont(name: "AvenirNext-Regular", size: 16.0)
-        //let attributes: [NSObject : AnyObject]? = [ NSFontAttributeName : font! ]
-        //self.segmentedControl.setTitleTextAttributes(attributes, forState: UIControlState.Normal)
     }
 
 
