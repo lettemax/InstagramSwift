@@ -17,6 +17,7 @@ class Cell: UITableViewCell {
 //    @IBOutlet weak var comment: UILabel!
 
 
+    @IBOutlet weak var comment: UILabel!
 
     override func layoutSubviews() {
         super.layoutSubviews()

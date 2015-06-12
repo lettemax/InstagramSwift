@@ -220,72 +220,66 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iAW-Ou-8Ph" customClass="PFImageView">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                                         <rect key="frame" x="0.0" y="0.0" width="400" height="303"/>
                                                     </variation>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5XY-hx-v4f">
-                                                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="kzr-v5-Azg"/>
-                                                        <constraint firstAttribute="width" constant="215" id="w71-DY-Xeb"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="kzr-v5-Azg"/>
-                                                            <exclude reference="w71-DY-Xeb"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="52.5" y="361.5" width="215" height="30"/>
-                                                        <mask key="constraints">
-                                                            <include reference="kzr-v5-Azg"/>
-                                                            <include reference="w71-DY-Xeb"/>
-                                                        </mask>
-                                                    </variation>
-                                                </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="poster's comment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vel-Rs-uez">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="343" id="ECG-be-8fA"/>
+                                                        <constraint firstAttribute="height" constant="21" id="oED-Su-0yf"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="108" y="323" width="184" height="21"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="ECG-be-8fA"/>
+                                                            <exclude reference="oED-Su-0yf"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="ECG-be-8fA"/>
+                                                            <include reference="oED-Su-0yf"/>
+                                                        </mask>
                                                     </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="centerX" secondItem="5XY-hx-v4f" secondAttribute="centerX" id="aKU-lF-NzL"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="5XY-hx-v4f" secondAttribute="bottom" constant="23" id="ul3-KV-9qU">
-                                                    <variation key="widthClass=compact" constant="0.0"/>
-                                                </constraint>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Vel-Rs-uez" secondAttribute="bottom" constant="47.5" id="66X-A9-Fog"/>
+                                                <constraint firstItem="Vel-Rs-uez" firstAttribute="top" secondItem="iAW-Ou-8Ph" secondAttribute="bottom" constant="20" id="IUe-fn-53O"/>
+                                                <constraint firstAttribute="centerX" secondItem="iAW-Ou-8Ph" secondAttribute="centerX" id="P2n-oz-bsv"/>
+                                                <constraint firstAttribute="centerX" secondItem="Vel-Rs-uez" secondAttribute="centerX" id="pmF-bj-KCv"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="iAW-Ou-8Ph"/>
-                                                    <exclude reference="5XY-hx-v4f"/>
                                                     <exclude reference="Vel-Rs-uez"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="aKU-lF-NzL"/>
-                                                    <exclude reference="ul3-KV-9qU"/>
+                                                    <exclude reference="P2n-oz-bsv"/>
+                                                    <exclude reference="66X-A9-Fog"/>
+                                                    <exclude reference="IUe-fn-53O"/>
+                                                    <exclude reference="pmF-bj-KCv"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
                                                     <include reference="iAW-Ou-8Ph"/>
-                                                    <include reference="5XY-hx-v4f"/>
                                                     <include reference="Vel-Rs-uez"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="aKU-lF-NzL"/>
-                                                    <include reference="ul3-KV-9qU"/>
+                                                    <include reference="P2n-oz-bsv"/>
+                                                    <include reference="66X-A9-Fog"/>
+                                                    <include reference="IUe-fn-53O"/>
+                                                    <include reference="pmF-bj-KCv"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="comment" destination="Vel-Rs-uez" id="PqV-do-ijS"/>
                                             <outlet property="postedImage" destination="iAW-Ou-8Ph" id="07i-tP-mfL"/>
                                         </connections>
                                     </tableViewCell>

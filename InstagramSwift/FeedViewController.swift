@@ -20,6 +20,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
 
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +89,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let myCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as Cell
         myCell.postedImage.file = imageFiles[indexPath.row]
+        myCell.comment.text = comments[indexPath.row]
         myCell.postedImage.loadInBackground { _ in
             myCell.layoutSubviews()
         }
