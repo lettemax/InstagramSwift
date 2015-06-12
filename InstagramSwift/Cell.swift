@@ -16,6 +16,8 @@ class Cell: UITableViewCell {
 //
 //    @IBOutlet weak var comment: UILabel!
 
+
+
     override func layoutSubviews() {
         super.layoutSubviews()
         postedImage.frame = contentView.bounds
