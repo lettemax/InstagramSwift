@@ -39,7 +39,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
 
             if let objects = objects {
 
-                self.imageFiles = objects as! [PFObject]
+                self.imageFiles = objects as [PFObject]
 //                for imageFile in objects {
 //
 //                    self.imageFiles.append(imageFile["imageFile"] as PFFile)
@@ -70,9 +70,9 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let myCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! Cell
+        let myCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as Cell
         let photoFile = imageFiles[indexPath.row]
-        myCell.postedImage.file = photoFile["imageFile"] as? PFFile
+        myCell.postedImage.file = photoFile["imageFile"] as PFFile
         //why error: Execution was interrupted, reason: EXC_BAD_INSTRUCTION (code=EXC_I386_INVOP, subcode=0x0). The process has been returned to the state before expression evaluation.
         myCell.postedImage.loadInBackground { _ in
             myCell.layoutSubviews()

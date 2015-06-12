@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -238,7 +238,8 @@
                                                             <exclude reference="w71-DY-Xeb"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact">
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="52.5" y="361.5" width="215" height="30"/>
                                                         <mask key="constraints">
                                                             <include reference="kzr-v5-Azg"/>
                                                             <include reference="w71-DY-Xeb"/>
@@ -388,22 +389,57 @@
                                     <outlet property="delegate" destination="Mew-UR-Tve" id="HQw-kc-gGx"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DR-af-MB5">
-                                <rect key="frame" x="535" y="20" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBA-Wk-RKT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="99H-Xg-i4X"/>
+                                    <constraint firstAttribute="width" constant="46" id="9N3-xs-2Na">
+                                        <variation key="widthClass=compact" constant="49"/>
+                                    </constraint>
+                                </constraints>
                                 <state key="normal" title="Logout">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="99H-Xg-i4X"/>
+                                        <exclude reference="9N3-xs-2Na"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="99H-Xg-i4X"/>
+                                        <include reference="9N3-xs-2Na"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="9Vo-UE-T2a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QBA-Wk-RKT" firstAttribute="trailing" secondItem="uPU-SI-uMo" secondAttribute="trailingMargin" id="2iu-zb-9xC"/>
+                            <constraint firstItem="QBA-Wk-RKT" firstAttribute="top" secondItem="22p-eR-Q4J" secondAttribute="bottom" id="UGs-QE-atG"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="lrj-Ei-C1U"/>
+                                <exclude reference="QBA-Wk-RKT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2iu-zb-9xC"/>
+                                <exclude reference="UGs-QE-atG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="lrj-Ei-C1U"/>
+                                <include reference="QBA-Wk-RKT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2iu-zb-9xC"/>
+                                <include reference="UGs-QE-atG"/>
                             </mask>
                         </variation>
                     </view>

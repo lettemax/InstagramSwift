@@ -112,7 +112,7 @@ class UsersViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCellWithIdentifier("UserCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("UserCell", forIndexPath: indexPath) as UITableViewCell
 
         cell.textLabel?.text = usernames[indexPath.row]
 

@@ -52,7 +52,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
                     for object in objects {
 
-                        var followedUser = object["following"] as! String
+                        var followedUser = object["following"] as String
 
                         var query = PFQuery(className: "Post")
 
@@ -64,11 +64,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
                                 for object in objects {
 
-                                    self.comments.append(object["message"] as! String)
+                                    self.comments.append(object["message"] as String)
 
-                                    self.imageFiles.append(object["imageFile"] as! PFFile)
+                                    self.imageFiles.append(object["imageFile"] as PFFile)
 
-                                    self.usernames.append(self.users[object["userId"] as! String]!)
+                                    self.usernames.append(self.users[object["userId"] as String]!)
                                 }
                                 self.tableView.reloadData()
                             }
@@ -86,7 +86,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let myCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! Cell
+        let myCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as Cell
         myCell.postedImage.file = imageFiles[indexPath.row]
         myCell.postedImage.loadInBackground { _ in
             myCell.layoutSubviews()
